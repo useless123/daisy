@@ -45,6 +45,9 @@ func actionSignImportBlock(fn string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	else {
+		log.Fatal(err)	
+	}
 	dbEnsureBlockchainTables(db)
 	keypair, publicKeyHash, err := cryptoGetAPrivateKey()
 	if err != nil {
